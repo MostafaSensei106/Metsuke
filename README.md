@@ -1,114 +1,87 @@
-# 🛡️ Malware Hash Scanner - GUI Tool
 
-A lightweight, beginner-friendly Python-based GUI tool for extracting file hashes (SHA-256) and scanning them directly against **VirusTotal** and **Hybrid Analysis**. Designed for SOC Analysts, Malware Researchers, and Threat Hunters.
+# 🛡️ File Hash Analyzer & Threat Intelligence Tool
 
----
-
-## 📸 Screenshots
-
-![screenshot](screenshot.png) <!-- Replace with your screenshot if available -->
+A Python-based GUI tool (built with `tkinter`) for **file analysis, hash calculation, and threat intelligence lookups** using **VirusTotal** and **Hybrid Analysis** APIs.
 
 ---
 
-## 🔍 Features
-
-- ✅ **File Hashing**: Instantly computes SHA-256 hash of any selected file (image, document, executable, etc).
-- 🧠 **Threat Lookup**: Searches the calculated hash on:
-  - [VirusTotal](https://www.virustotal.com/gui/home/search)
-  - [Hybrid Analysis](https://www.hybrid-analysis.com/)
-- 🖥️ **Simple GUI**: Intuitive interface built using Python `tkinter`.
-- 🔐 **Offline Support**: Hash calculation works offline; only the lookups need internet access.
-- 🔒 **API Key Support**: Integrates your own API keys securely.
+## 🚀 Features
+- **File Hashing**: Calculate SHA-256 hash for any file.
+- **Threat Intelligence Lookup**:
+  - Search file hashes on **VirusTotal**.
+  - Search file hashes on **Hybrid Analysis**.
+- **Export Results**:
+  - Save search results to text files.
+- **Clipboard Support** *(optional)*: Copy results directly to your clipboard.
+- **GUI Enhancements**:
+  - Modern, user-friendly interface.
+  - Organized results with scrollable text boxes.
+- **Notifications / Alerts**:
+  - Inform the user if the file is clean, suspicious, or malicious.
+  - Error handling for invalid input or API issues.
 
 ---
 
-## 🧰 Requirements
-
-- Python 3.6 or newer
-- Modules:
-  - `requests`
-  - `tkinter` (usually preinstalled with Python)
-
-Install dependencies via pip:
-
-```bash
-pip install requests
+## 📸 Screenshot
+*(Add your screenshot here)*
+```markdown
+![Screenshot](screenshot.png)
 ```
 
 ---
 
-## 🚀 Usage
-
-1. Clone the repository or download the source code.
-2. Open terminal/cmd in the project folder.
-3. Run the tool:
-
+## ⚙️ Requirements
+- Python 3.8+
+- Install dependencies:
 ```bash
-python malware_scanner.py
+pip install requests pyperclip
+```
+*(Remove `pyperclip` if clipboard support is not needed)*
+
+---
+
+## 🔑 API Keys
+This tool requires:
+- **VirusTotal API Key** → [Get it here](https://developers.virustotal.com/reference/api-overview)
+- **Hybrid Analysis API Key** → [Get it here](https://www.hybrid-analysis.com/docs/api/v2)
+
+Add your keys inside the script:
+```python
+VIRUSTOTAL_API_KEY = "your_api_key_here"
+HYBRID_ANALYSIS_API_KEY = "your_api_key_here"
 ```
 
 ---
 
-## 💻 Build EXE (Optional)
-
-You can convert the script into a standalone Windows `.exe` using **PyInstaller**:
-
-### 🔧 Step-by-Step
-
-1. Install PyInstaller:
-
+## 🖥️ Usage
+Run the script:
 ```bash
-pip install pyinstaller
+python file_hash_analyzer.py
 ```
-
-2. Build the EXE with icon:
-
-```bash
-pyinstaller --onefile --windowed --icon=icon.ico malware_scanner.py
-```
-
-3. The `.exe` file will be located in the `dist` folder.
+1. Select a file.
+2. Click **"Scan Hash on VirusTotal"**.
+3. View results in the GUI or export them.
 
 ---
 
-## 📌 Use Cases
-
-- SOC triage automation
-- Malware hash verification
-- Incident response support
-- Threat hunting enrichment
-- Reverse engineering preparation
-
----
-
-## 🔐 API Keys
-
-Make sure to replace the `api_key` variables in the script with your own API keys from:
-
-- [VirusTotal API](https://developers.virustotal.com/reference/overview)
-- [Hybrid Analysis API](https://www.hybrid-analysis.com/docs/api/v2/overview)
+## 📌 Future Enhancements
+- Multi-file batch analysis.
+- Support for more threat intelligence platforms (e.g., AlienVault OTX, AbuseIPDB).
+- Dark mode UI theme.
+- Automatic hash type detection.
+- Real-time alerts from APIs.
 
 ---
 
-## 🌍 Future Enhancements
-
-- Submit unknown files to VirusTotal directly.
-- Display scan result verdicts inside GUI in a clean format.
-- JSON report export.
-- Integration with more sandboxes (AnyRun, Joe Sandbox, etc).
-- Dark mode theme.
+## 📜 License
+This project is licensed under the MIT License – you are free to use, modify, and distribute it.
 
 ---
 
-## 👨‍💻 Author
-
-Built with 💙 by **Ahmed Emad (Odo)**  
-Security Analyst | Cloud & SOC Specialist
-
-[GitHub](https://github.com/ahmedemad) • [LinkedIn](https://www.linkedin.com/in/ahmedemad/) • [Portfolio](https://eng-ahmed-emad.github.io/AhmedEmad-Dev/)
+## 🤝 Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss your idea.
 
 ---
 
-## 📝 License
-
-This project is licensed under the MIT License.
+**Author:** Ahmed Emad (Odo)  
+**GitHub:** [Your GitHub Profile Link]
