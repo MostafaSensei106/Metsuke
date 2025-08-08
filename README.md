@@ -22,12 +22,6 @@ A Python-based GUI tool (built with `tkinter`) for **file analysis, hash calcula
 
 ---
 
-## 📸 Screenshot
-*(Add your screenshot here)*
-```markdown
-![Screenshot](screenshot.png)
-```
-
 ---
 
 ## ⚙️ Requirements
@@ -83,5 +77,5 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ---
 
-**Author:** Ahmed Emad (Odo)  
-**GitHub:** [Your GitHub Profile Link]
+**Author:** Ahmed Emad Eldeen  (Odo)  
+**GitHub:** [[Your GitHub Profile Link](https://github.com/Eng-Ahmed-Emad)]
