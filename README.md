@@ -57,5 +57,5 @@ This project is licensed under the **MIT License**.
 
 ## 📬 Contact
 - **Developer:** Odo (Ahmed Emad Eldeen Abdelmoneam)
-- **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/yourprofile)
-- **GitHub:** [GitHub Profile](https://github.com/yourusername)
+- **LinkedIn:** [LinkedIn Profile](www.linkedin.com/in/ahmed-emad-eldeen-a77420284)
+- **GitHub:** [GitHub Profile](https://github.com/Eng-Ahmed-Emad)
